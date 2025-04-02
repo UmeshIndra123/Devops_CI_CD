@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/UmeshIndra123/devops-ci_cd.git'
+                git credentialsId: '57cf86b3-fe3d-4937-9333-39536263c90f', url: 'git@github.com:UmeshIndra123/Devops_CI_CD.git'
+
             }
         }
 
